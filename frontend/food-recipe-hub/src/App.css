@@ -16,7 +16,7 @@ header {
   position: fixed;
   top:0;
   z-index: 10;
-  background-color: #ffffff;
+  background-color: #2a6355   ;
 }
 
 header ul{
@@ -108,7 +108,7 @@ section{
 }
 
 .card-body{
-  background-color: #d4f6e8;
+  background-color: #c8eddd;
   padding: 1rem;
 }
 
