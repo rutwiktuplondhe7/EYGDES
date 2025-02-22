@@ -21,7 +21,7 @@ UI Styling: Custom CSS
 
 🚀 Getting Started
 1️⃣ Clone the Repository : git clone https://github.com/rutwiktuplondhe7/EYGDES.git
-cd Recipe Sharing Platform
+cd frontend
 2️⃣ Install Dependencies : npm install
 3️⃣ Run the App : npm start
 
