@@ -16,7 +16,7 @@ header {
   position: fixed;
   top:0;
   z-index: 10;
-  background-color: #2a6355   ;
+  background-color: #DC143C  ;
 }
 
 header ul{
@@ -70,9 +70,10 @@ section{
 }
 
 .home button{
-  color: white;
+  color: black;
   border:none;
-  background-color: #213547;
+  background-color: #bd8686;
+  border-radius: 25px;
   width: 200px;
   padding: 0.5rem;
   border-radius: 0;
@@ -252,7 +253,7 @@ section{
   width:100vw;
   height: 30px;
   color: white;
-  background-color: #213547;
+  background-color: rgb(58, 53, 53);
   position: fixed;
   bottom: 0;
   text-align: center;

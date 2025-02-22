@@ -20,7 +20,7 @@ export default function Navbar() {
 
   return (
     <header>
-      <h2>Food Recipe Hub</h2>
+      <h2>Recipe Sharing Platform</h2>
       <ul>
         <li><a href="/">Home</a></li>
         <li><a href="#">My Recipe</a></li>

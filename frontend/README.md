@@ -1,7 +1,7 @@
-🍽️ Food Recipe Hub : A simple web app for discovering, saving, and sharing delicious recipes!
+🍽️ Recipe Sharing Platform : A simple web app for discovering, saving, and sharing delicious recipes!
 
 📌 Overview -
-Food Recipe Hub is a web application where users can browse recipes, save their favorites, and even contribute their own. The app provides an intuitive UI for easy navigation and ensures a seamless user experience.
+Recipe Sharing Platform is a web application where users can browse recipes, save their favorites, and even contribute their own. The app provides an intuitive UI for easy navigation and ensures a seamless user experience.
 
 ✨ Features : 
 ✅ User authentication (Register & Login)
@@ -20,8 +20,8 @@ UI Styling: Custom CSS
 
 
 🚀 Getting Started
-1️⃣ Clone the Repository : git clone https://github.com/aryandumale04/EYGDS-P6-RecipeApp.git
-cd Food-Recipe-Hub
+1️⃣ Clone the Repository : git clone https://github.com/rutwiktuplondhe7/EYGDES.git
+cd Recipe Sharing Platform
 2️⃣ Install Dependencies : npm install
 3️⃣ Run the App : npm start
 
