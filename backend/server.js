@@ -8,10 +8,10 @@ const PORT=process.env.PORT || 3000
 connectDb()
 app.use(express.json())
 app.use(cors())
-
+app.use("/",require("./routes/user"))
 app.use("/recipe",require("./routes/recipe"))
 
 app.listen(PORT,(err)=>{
-    console.log(`Server running at  :${PORT}`);
+    console.log(`Server running at  :${PORT}`); 
 
 })

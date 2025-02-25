@@ -24,6 +24,12 @@ const router = createBrowserRouter([
       {
         index: true,  // ✅ Use `index: true` instead of `path: "/"` inside children
         element: <Home />,loader:getAllRecipes
+      },
+      {
+        path: "/myRecipe",element:<Home/>
+      },
+      {
+        path:"/favRecipe",element:<Home/>
       }
     ]
   }

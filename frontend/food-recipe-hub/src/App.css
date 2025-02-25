@@ -16,7 +16,7 @@ header {
   position: fixed;
   top:0;
   z-index: 10;
-  background-color: #2a6355   ;
+  background-color: #3E8E41   ;
 }
 
 header ul{
@@ -32,15 +32,15 @@ header ul li{
   cursor: pointer;
 }
 
-li a{
-  color: black;
+ header ul li a{
+  color: white;
   transition: all 0.3s;
   padding:2px 10px;
   border-radius: 10px;
 }
 
 li a:hover{
-  color:black;
+  color:#E67E22 ;
 }
 
 li .login{
@@ -72,7 +72,7 @@ section{
 .home button{
   color: white;
   border:none;
-  background-color: #213547;
+  background-color: #2C3E50;
   width: 200px;
   padding: 0.5rem;
   border-radius: 0;
@@ -80,7 +80,7 @@ section{
 
 .home a:hover{
   color: white;
-  background-color: #2c4860;
+  background-color: #1A237E;
 }
 
 .home .left h5{
@@ -101,15 +101,23 @@ section{
   cursor:pointer
 }
 
+
 .card{
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  /* box-shadow: 0 1px 2px rgba(199, 24, 24, 0.5); */
   text-align: center;
   border-radius: 5px;
+  
+    background-color: #F4D03F; /* Keep it white to contrast with black */
+    border-radius: 8px;
+    box-shadow: 0px 1px 2px rgba(255, 255, 255, 0.1); /* Soft white shadow */
+    /* padding:0.35rem */
+
 }
 
 .card-body{
-  background-color: #c8eddd;
+  background-color: #27AE60;
   padding: 1rem;
+  color: black;
 }
 
 .card-body .title{
@@ -130,6 +138,7 @@ section{
   gap:2px;
   font-size: 13px;
   font-weight: 500;
+  color: black;
 }
 
 .action{
@@ -164,6 +173,7 @@ section{
   border:none;
   left:30%;
   width: 40%;
+  background-color: #f4993ff3;
 }
 
 .backdrop{
@@ -213,7 +223,7 @@ section{
 .form button{
   margin:2rem 0;
   border:none;
-  background-color: #d4f6e8;
+  background-color: #D35400;
   font-size: 14px;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
 }
