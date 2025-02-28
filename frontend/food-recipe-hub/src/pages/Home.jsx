@@ -3,9 +3,11 @@ import foodimage from '../assets/foodRecipe.png'
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
 import RecipeItem from '../Components/RecipeItem'
+import { useNavigate } from 'react-router-dom'
 
 
 export default function Home() {
+  const navigate=useNavigate()
   return (
     <>
       
@@ -17,7 +19,9 @@ export default function Home() {
                 <h5>
                 Welcome to Food Recipe Hub, your go-to destination for discovering and sharing delicious recipes! Whether you're a home cook or a seasoned chef, our platform lets you explore a variety of mouthwatering dishes, save your favorite recipes, and even contribute your own creations. From quick and easy meals to gourmet delicacies, you'll find step-by-step instructions and ingredient lists to make cooking fun and hassle-free. Start your culinary journey today and bring flavors to life with Food Recipe Hub!
                 </h5>
-                <button>
+                <button onClick={()=>{
+                  navigate("/addRecipe")
+                }}>
                     Share your recipe
                 </button>
          </div>

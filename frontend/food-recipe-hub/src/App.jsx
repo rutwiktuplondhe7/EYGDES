@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './pages/Home';
 import Main from './Components/Main';
 import axios from 'axios';
+import AddFoodRecipe from './pages/AddFoodRecipe';
 
 
 const getAllRecipes = async () => {
@@ -30,6 +31,9 @@ const router = createBrowserRouter([
       },
       {
         path:"/favRecipe",element:<Home/>
+      },
+      {
+        path:"/addRecipe",element:<AddFoodRecipe/>
       }
     ]
   }
