@@ -19,6 +19,10 @@ const recipeSchema = mongoose.Schema({
     coverImage: {
         type: String, // Path to image
         required: true // Ensure images are required
+    },
+    createdBy:{
+        type:mongoose.Schema.Types.ObjectId,
+        ref:"USer"
     }
 }, { timestamps: true });
 

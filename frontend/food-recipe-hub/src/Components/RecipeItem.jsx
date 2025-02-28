@@ -8,7 +8,9 @@ export default function RecipeItem() {
   const allRecipes = useLoaderData() || []; // Ensure it's an array even if undefined
 
 // console.log(allRecipes)
-console.log("Fetched Recipes:", allRecipes);
+console.log("Fetched Recipes:", allRecipes.map(recipe => recipe.coverImage));
+
+
 
 
 return (
@@ -21,6 +23,8 @@ return (
             
 
             <img src={item.coverImage} alt="food image" width="120px" height="100px" />
+
+
 
 
             <div className='card-body'>

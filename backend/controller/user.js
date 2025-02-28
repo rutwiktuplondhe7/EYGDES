@@ -34,13 +34,7 @@ const userSignUp = async (req, res) => {
         return res.status(201).json({ 
             message: "User registered successfully", 
             token, 
-            user: {
-                id: newUser._id,
-                email: newUser.email,
-                createdAt: newUser.createdAt,
-                updatedAt: newUser.updatedAt,
-                __v: newUser.__v
-            }
+            user: { ...newUser.toObject(), password: undefined } // Remove password from response
         });
     } catch (error) {
         console.error("Sign-Up Error:", error);
@@ -76,13 +70,7 @@ const userLogin = async (req, res) => {
         return res.status(200).json({ 
             message: "Login successful", 
             token, 
-            user: {
-                id: user._id,
-                email: user.email,
-                createdAt: user.createdAt,
-                updatedAt: user.updatedAt,
-                __v: user.__v
-            } 
+            user: { ...user.toObject(), password: undefined } // Remove password from response
         });
     } catch (error) {
         console.error("Login Error:", error);
@@ -97,13 +85,7 @@ const getUser = async (req, res) => {
         if (!user) {
             return res.status(404).json({ error: "User not found" });
         }
-        res.json({ 
-            id: user._id,
-            email: user.email,
-            createdAt: user.createdAt,
-            updatedAt: user.updatedAt,
-            __v: user.__v
-        });
+        res.json({ ...user.toObject(), password: undefined }); // Hide password
     } catch (error) {
         console.error("Get User Error:", error);
         res.status(500).json({ error: "Server error", details: error.message });

@@ -16,6 +16,7 @@ const storage = multer.diskStorage({
 const upload = multer({ storage });
 
 const addRecipe = async (req, res) => {
+    console.log(req.user)
     try {
         const { title, ingredients, instructions, time } = req.body;
 
@@ -39,7 +40,8 @@ const addRecipe = async (req, res) => {
             ingredients: ingredientsArray,
             instructions,
             time,
-            coverImage: imagePath  // Store full URL
+            coverImage: imagePath , // Store full URL
+            createdBy:req.user.id
         });
 
         return res.status(201).json(newRecipe);
