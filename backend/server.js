@@ -1,5 +1,6 @@
+require("dotenv").config();
 const express = require("express");
-const dotenv = require("dotenv").config();
+
 const connectDb = require("./config/connectionDB");
 const multer = require("multer");
 const path = require("path");
