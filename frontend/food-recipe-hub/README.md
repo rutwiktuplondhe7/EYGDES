@@ -39,7 +39,7 @@ recipeapp/
 
 
 💡 How to Run Locally
-1️⃣ Clone the Repository : git clone https://github.com/aryandumale04/EYGDS-P6-RecipeApp.git
+1️⃣ Clone the Repository : git clone https://github.com/rutwiktuplondhe7/EYGDES.git
 2️⃣ Set Up Backend
         1.cd backend
         2.npm install
